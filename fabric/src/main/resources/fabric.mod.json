@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "elib",
+  "version": "${version}",
+  "name": "Elib",
+  "description": "Shared configuration and client UI utilities for Elpu7's mods.",
+  "authors": ["Elpu7"],
+  "license": "MIT",
+  "icon": "assets/elib/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "modmenu": [
+      "dev.elpu7.elib.fabric.compat.ElibModMenu"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "elib.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "custom": {
+    "modmenu": {
+      "badges": ["library"]
+    }
+  },
+  "depends": {
+    "fabricloader": "${loader_dependency}",
+    "minecraft": "${minecraft_dependency}",
+    "java": ">=25"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

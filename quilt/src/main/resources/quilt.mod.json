@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "dev.elpu7",
+    "id": "elib",
+    "version": "${version}",
+    "metadata": {
+      "name": "Elib",
+      "description": "Shared configuration and client UI utilities for Elpu7's mods.",
+      "contributors": {
+        "Elpu7": "Owner"
+      },
+      "license": "MIT",
+      "icon": "assets/elib/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "modmenu": "dev.elpu7.elib.quilt.compat.ElibModMenu"
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": "${quilt_loader_dependency}"
+      },
+      {
+        "id": "minecraft",
+        "versions": "${minecraft_dependency}"
+      },
+      {
+        "id": "java",
+        "versions": ">=25"
+      }
+    ]
+  },
+  "minecraft": {
+    "environment": "client"
+  },
+  "mixin": [
+    "elib.client.mixins.json"
+  ],
+  "modmenu": {
+    "badges": ["library"]
+  }
+}

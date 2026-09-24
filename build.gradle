@@ -1,0 +1,44 @@
+import org.gradle.authentication.http.BasicAuthentication
+
+plugins {
+    id 'base'
+}
+
+group = project.maven_group
+version = project.mod_version
+
+subprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+
+    plugins.withId('maven-publish') {
+        publishing {
+            repositories {
+                maven {
+                    name = 'Elpu7'
+                    url = uri(providers.gradleProperty('elibMavenUrl')
+                        .orElse('https://maven.elpu7.dev/releases').get())
+                    if (url.scheme != 'file') {
+                        credentials {
+                            username = providers.environmentVariable('ELPU7_MAVEN_USER').orNull
+                            password = providers.environmentVariable('ELPU7_MAVEN_TOKEN').orNull
+                        }
+                        authentication {
+                            basic(BasicAuthentication)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+tasks.register('buildAll') {
+    group = 'build'
+    description = 'Builds the Fabric, Quilt, and NeoForge artifacts.'
+    dependsOn subprojects.collect { "${it.path}:build" }
+}
+
+tasks.named('build') {
+    dependsOn tasks.named('buildAll')
+}

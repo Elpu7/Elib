@@ -1,0 +1,5 @@
+{
+  "screen.elib.title": "Elib Config",
+  "screen.elib.description": "Shared configuration storage and menu components for Elpu7's mods.",
+  "screen.elib.no_settings": "Elib has no settings of its own yet."
+}

@@ -1,0 +1,106 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+base {
+    archivesName = rootProject.archives_base_name
+}
+
+sourceSets {
+    main {
+        java.srcDirs = [
+            rootProject.file('common/src/main/java'),
+            rootProject.file('common/src/client/java'),
+            file('src/main/java')
+        ]
+        resources.srcDirs = [
+            rootProject.file('common/src/main/resources'),
+            rootProject.file('common/src/client/resources'),
+            file('src/main/resources')
+        ]
+    }
+    test {
+        java.srcDirs += rootProject.file('common/src/test/java')
+    }
+}
+
+loom {
+    runs {
+        client {
+            runDir rootProject.file('run/fabric').absolutePath
+        }
+    }
+
+    mods {
+        elib {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    maven {
+        name = 'Terraformers'
+        url = 'https://maven.terraformersmc.com/'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    compileOnly("com.terraformersmc:modmenu:${project.modmenu_version}") {
+        transitive = false
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.14.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.14.2'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+processResources {
+    from(rootProject.file('common/src/main/assets')) {
+        into 'assets'
+    }
+
+    inputs.property 'version', project.version
+    inputs.property 'minecraft_dependency', project.minecraft_dependency
+    inputs.property 'loader_dependency', project.loader_dependency
+    filteringCharset = 'UTF-8'
+
+    filesMatching('fabric.mod.json') {
+        expand(
+            version: project.version,
+            minecraft_dependency: project.minecraft_dependency,
+            loader_dependency: project.loader_dependency
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+
+jar {
+    archiveFileName = "${rootProject.archives_base_name}-${project.version}-fabric.jar"
+    from(rootProject.file('LICENSE.txt')) {
+        rename { "${it}_${rootProject.archives_base_name}" }
+    }
+}
+
+publishing {
+    publications {
+        create('mavenJava', MavenPublication) {
+            artifactId = "${rootProject.archives_base_name}-fabric"
+            from components.java
+        }
+    }
+}
