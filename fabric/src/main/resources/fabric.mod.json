@@ -3,7 +3,7 @@
   "id": "elib",
   "version": "${version}",
   "name": "Elib",
-  "description": "Shared configuration and client UI utilities for Elpu7's mods.",
+  "description": "Tiny configuration library for my mods.",
   "authors": ["Elpu7"],
   "license": "MIT",
   "icon": "assets/elib/icon.png",
