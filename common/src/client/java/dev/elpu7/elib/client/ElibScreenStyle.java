@@ -1,12 +1,19 @@
 package dev.elpu7.elib.client;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.components.AbstractSelectionList;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.resources.Identifier;
 
 final class ElibScreenStyle {
     static final int BUTTON_WIDTH = 150;
     static final int BUTTON_GAP = 8;
     static final int HEADER_HEIGHT = 33;
     static final int FOOTER_HEIGHT = 33;
+    private static final Identifier MENU_LIST_BACKGROUND =
+        Identifier.withDefaultNamespace("textures/gui/menu_list_background.png");
 
     private ElibScreenStyle() {
     }
@@ -24,10 +31,19 @@ final class ElibScreenStyle {
     }
 
     static void drawBackdrop(GuiGraphicsExtractor graphics, int width, int height) {
-        graphics.fill(0, 0, width, height, 0x66000000);
-        graphics.fill(0, 0, width, HEADER_HEIGHT, 0x44000000);
-        graphics.horizontalLine(0, width, HEADER_HEIGHT, 0xFF555555);
-        graphics.fill(0, height - FOOTER_HEIGHT, width, height, 0x44000000);
-        graphics.horizontalLine(0, width, height - FOOTER_HEIGHT, 0xFF555555);
+        boolean inWorld = Minecraft.getInstance().level != null;
+        int listBottom = height - FOOTER_HEIGHT;
+        Identifier listBackground = inWorld
+            ? AbstractSelectionList.INWORLD_MENU_LIST_BACKGROUND : MENU_LIST_BACKGROUND;
+        Identifier headerSeparator = inWorld ? Screen.INWORLD_HEADER_SEPARATOR : Screen.HEADER_SEPARATOR;
+        Identifier footerSeparator = inWorld ? Screen.INWORLD_FOOTER_SEPARATOR : Screen.FOOTER_SEPARATOR;
+
+        graphics.blit(RenderPipelines.GUI_TEXTURED, listBackground,
+            0, HEADER_HEIGHT, (float) width, (float) listBottom,
+            width, listBottom - HEADER_HEIGHT, 32, 32);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, headerSeparator,
+            0, HEADER_HEIGHT - 2, 0.0F, 0.0F, width, 2, 32, 2);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, footerSeparator,
+            0, listBottom, 0.0F, 0.0F, width, 2, 32, 2);
     }
 }

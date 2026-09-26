@@ -15,7 +15,7 @@ public final class ElibModsScreen extends Screen {
     private static final Component NO_MODS = Component.translatable("screen.elib.no_mods");
     private static final int MOD_BUTTON_WIDTH = 200;
     private static final int MOD_BUTTON_HEIGHT = 30;
-    private static final int ICON_SIZE = 20;
+    private static final int ICON_SIZE = MOD_BUTTON_HEIGHT;
 
     private final Screen parent;
     private final Screen rootParent;
@@ -46,7 +46,7 @@ public final class ElibModsScreen extends Screen {
                 ElibConfigRegistry.Entry entry = entries.get(index);
                 int y = 38 + index * 36;
                 if (entry.icon() != null) {
-                    icons.add(new IconPlacement(entry.icon(), iconX, y + 5));
+                    icons.add(new IconPlacement(entry.icon(), iconX, y));
                 }
                 addRenderableWidget(Button.builder(entry.name(), button ->
                     minecraft.gui.setScreen(entry.createScreen(this)))
@@ -70,9 +70,10 @@ public final class ElibModsScreen extends Screen {
         ElibScreenStyle.drawBackdrop(graphics, width, height);
         for (IconPlacement icon : icons) {
             graphics.outline(icon.x() - 1, icon.y() - 1, ICON_SIZE + 2, ICON_SIZE + 2, 0xFF777777);
+            // Minecraft 26.3 expects UVs in u0, u1, v0, v1 order.
             graphics.blit(icon.texture(), icon.x(), icon.y(),
                 icon.x() + ICON_SIZE, icon.y() + ICON_SIZE,
-                0.0F, 0.0F, 1.0F, 1.0F);
+                0.0F, 1.0F, 0.0F, 1.0F);
         }
         super.extractRenderState(graphics, mouseX, mouseY, partialTick);
     }
