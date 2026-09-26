@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Options.class)
 public abstract class OptionsMixin {
     @Inject(method = "<init>", at = @At("HEAD"))
-    private void elib$initializeSettings(Minecraft minecraft, File gameDirectory, CallbackInfo callbackInfo) {
+    private static void elib$initializeSettings(Minecraft minecraft, File gameDirectory, CallbackInfo callbackInfo) {
         ElibSettingsManager.initialize(QuiltLoader.getConfigDir());
     }
 }

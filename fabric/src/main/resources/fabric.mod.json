@@ -5,6 +5,11 @@
   "name": "Elib",
   "description": "Tiny configuration library for my mods.",
   "authors": ["Elpu7"],
+  "contact": {
+    "homepage": "https://modrinth.com/project/elib",
+    "issues": "https://github.com/Elpu7/elib/issues",
+    "sources": "https://github.com/Elpu7/elib"
+  },
   "license": "MIT",
   "icon": "assets/elib/icon.png",
   "environment": "client",
