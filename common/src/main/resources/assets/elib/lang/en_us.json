@@ -1,5 +1,13 @@
 {
   "screen.elib.title": "Elib Config",
-  "screen.elib.description": "Shared configuration storage and menu components for Elpu7's mods.",
-  "screen.elib.no_settings": "Elib has no settings of its own yet."
+  "screen.elib.mods_button": "Mod settings...",
+  "screen.elib.no_mods": "No supported mods installed",
+  "screen.elib.options_button": "Button In Options: %s",
+  "screen.elib.modmenu_integration": "ModMenu Integration: %s",
+  "screen.elib.reset_defaults": "Reset To Default",
+  "screen.elib.on": "On",
+  "screen.elib.off": "Off",
+  "screen.elib.modmenu_restart": "Restart Minecraft after changing Mod Menu integration.",
+  "screen.elib.keep_entrypoint": "Keep at least one way to open Elib settings enabled.",
+  "screen.elib.modmenu_unavailable": "Mod Menu is not installed on this loader."
 }

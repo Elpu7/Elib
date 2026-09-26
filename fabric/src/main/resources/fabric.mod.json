@@ -9,6 +9,9 @@
   "icon": "assets/elib/icon.png",
   "environment": "client",
   "entrypoints": {
+    "client": [
+      "dev.elpu7.elib.fabric.ElibFabricClient"
+    ],
     "modmenu": [
       "dev.elpu7.elib.fabric.compat.ElibModMenu"
     ]

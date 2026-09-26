@@ -1,7 +1,8 @@
 package dev.elpu7.elib.mixin.client;
 
 import dev.elpu7.elib.client.ElibFaceButton;
-import dev.elpu7.elib.client.ElibInfoScreen;
+import dev.elpu7.elib.client.ElibConfigScreen;
+import dev.elpu7.elib.client.ElibSettingsManager;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.options.OptionsScreen;
@@ -24,13 +25,17 @@ public abstract class OptionsScreenMixin extends Screen {
 
     @Inject(method = "init", at = @At("TAIL"))
     private void elib$addOpenButton(CallbackInfo callbackInfo) {
+        elib$openButton = null;
+        if (!ElibSettingsManager.shouldShowOptionsButton()) {
+            return;
+        }
         Button doneButton = elib$findDoneButton();
         if (doneButton == null) {
             return;
         }
 
         elib$openButton = addRenderableWidget(new ElibFaceButton(0, 0, () ->
-            minecraft.gui.setScreen(new ElibInfoScreen((Screen) (Object) this))));
+            minecraft.gui.setScreen(new ElibConfigScreen((Screen) (Object) this))));
         elib$positionOpenButton(doneButton);
     }
 

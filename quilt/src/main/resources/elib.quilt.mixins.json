@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.elpu7.elib.quilt.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "OptionsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

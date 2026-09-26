@@ -36,7 +36,8 @@
     "environment": "client"
   },
   "mixin": [
-    "elib.client.mixins.json"
+    "elib.client.mixins.json",
+    "elib.quilt.mixins.json"
   ],
   "modmenu": {
     "badges": ["library"]
