@@ -66,11 +66,12 @@ tasks.withType(JavaCompile).configureEach {
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(25)
     withSourcesJar()
+    withJavadocJar()
 }
 
 jar {
     archiveFileName = "${rootProject.archives_base_name}-${project.version}-neoforge.jar"
-    from(rootProject.file('LICENSE.txt')) {
+    from(rootProject.file('LICENSE')) {
         rename { "${it}_${rootProject.archives_base_name}" }
     }
 }
@@ -80,6 +81,28 @@ publishing {
         create('mavenJava', MavenPublication) {
             artifactId = "${rootProject.archives_base_name}-neoforge"
             from components.java
+            pom {
+                name = 'Elib for NeoForge'
+                description = 'Client-side configuration library for Minecraft mods.'
+                url = 'https://github.com/Elpu7/Elib'
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'https://opensource.org/licenses/MIT'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'Elpu7'
+                        name = 'Elpu7'
+                    }
+                }
+                scm {
+                    url = 'https://github.com/Elpu7/Elib'
+                    connection = 'scm:git:https://github.com/Elpu7/Elib.git'
+                    developerConnection = 'scm:git:ssh://git@github.com/Elpu7/Elib.git'
+                }
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
     "version": "${version}",
     "metadata": {
       "name": "Elib",
-      "description": "Shared configuration and client UI utilities for Elpu7's mods.",
+      "description": "Client-side configuration library for Minecraft mods.",
       "contributors": {
         "Elpu7": "Owner"
       },

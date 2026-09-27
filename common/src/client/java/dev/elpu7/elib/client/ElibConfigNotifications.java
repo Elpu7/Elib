@@ -16,16 +16,25 @@ public final class ElibConfigNotifications {
     public static void saved() {
     }
 
+    /** Shows Elib's optional shared reset toast, if enabled in Elib settings. */
     public static void reset() {
         show(RESET, "toast.elib.reset");
     }
 
-    /** Retained for binary compatibility; saving no longer shows a notification. */
+    /**
+     * Retained for binary compatibility; saving no longer shows a notification.
+     *
+     * @param ignoredModName ignored
+     */
     @Deprecated
     public static void saved(Component ignoredModName) {
     }
 
-    /** Kept for mods built against the earlier Elib API. */
+    /**
+     * Kept for mods built against the earlier Elib API.
+     *
+     * @param ignoredModName ignored
+     */
     @Deprecated
     public static void reset(Component ignoredModName) {
         reset();

@@ -21,6 +21,8 @@ import java.util.function.Supplier;
  * defaults, validation, and the point at which the configuration is saved.
  * Validation must modify the supplied object in place, so references held by
  * screens and controllers remain valid.
+ *
+ * @param <T> the mod's configuration type
  */
 public final class JsonConfigStore<T> {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -32,6 +34,15 @@ public final class JsonConfigStore<T> {
     private final Logger logger;
     private T config;
 
+    /**
+     * Creates a store with the caller's defaults and validation rules.
+     *
+     * @param path file to read and write
+     * @param type configuration class used for JSON deserialization
+     * @param defaults supplies a new default configuration
+     * @param sanitize validates or repairs a configuration in place
+     * @param logger receives read and write errors
+     */
     public JsonConfigStore(
         Path path,
         Class<T> type,
@@ -47,15 +58,29 @@ public final class JsonConfigStore<T> {
         this.config = newDefaults();
     }
 
+    /**
+     * Gets the active configuration object, which the caller may edit before saving.
+     *
+     * @return the current, mutable configuration object
+     */
     public T get() {
         return config;
     }
 
+    /**
+     * Gets the file used by this store.
+     *
+     * @return the normalized absolute path of the configuration file
+     */
     public Path path() {
         return path;
     }
 
-    /** Loads the file, creating it with defaults only when it is missing. */
+    /**
+     * Loads the file, creating it with defaults only when it is missing.
+     * A malformed file is backed up before defaults are saved. An unreadable
+     * file is left in place and defaults are used only in memory.
+     */
     public void load() {
         try (Reader reader = Files.newBufferedReader(path)) {
             T loaded = GSON.fromJson(reader, type);
@@ -80,7 +105,11 @@ public final class JsonConfigStore<T> {
         }
     }
 
-    /** Writes through a temporary file, leaving the previous file intact on failure. */
+    /**
+     * Writes through a temporary file, leaving the previous file intact on failure.
+     *
+     * @return {@code true} if the configuration was written successfully
+     */
     public boolean save() {
         Path temporaryPath = null;
 

@@ -11,6 +11,15 @@ public final class ConfigWidgets {
     private ConfigWidgets() {
     }
 
+    /**
+     * Creates a Minecraft boolean option from the caller's current value.
+     *
+     * @param translationKey translation key for the option label
+     * @param tooltipKey translation key for the tooltip
+     * @param currentValue supplies the initial value
+     * @param onChanged handles changes; the caller decides when to save
+     * @return a boolean option ready to add to an options screen
+     */
     public static OptionInstance<Boolean> booleanOption(
         String translationKey,
         String tooltipKey,

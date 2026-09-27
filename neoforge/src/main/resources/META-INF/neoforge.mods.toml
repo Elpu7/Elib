@@ -9,7 +9,7 @@ version="${mod_version}"
 displayName="Elib"
 iconFile="assets/elib/icon.png"
 authors="Elpu7"
-description='''Shared configuration and client UI utilities for Elpu7's mods.'''
+description='''Client-side configuration library for Minecraft mods.'''
 
 [[dependencies.elib]]
 modId="neoforge"

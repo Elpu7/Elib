@@ -3,7 +3,7 @@
   "id": "elib",
   "version": "${version}",
   "name": "Elib",
-  "description": "Tiny configuration library for my mods.",
+  "description": "Client-side configuration library for Minecraft mods.",
   "authors": ["Elpu7"],
   "contact": {
     "homepage": "https://modrinth.com/project/elib",
