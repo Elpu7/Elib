@@ -1,13 +1,12 @@
-![Elib banner](https://github.com/Elpu7/Elib/blob/master/common/src/main/resources/assets/elib/elib_banner.png)
+![Elib banner](https://raw.githubusercontent.com/Elpu7/Elib/refs/heads/master/common/src/main/resources/assets/elib/elib_banner.png)
 
 <p align="center">
   <img alt="Fabric supported" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg">
   <img alt="NeoForge supported" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/neoforge_vector.svg">
   <img alt="Quilt supported" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/quilt_vector.svg">
-  <a href="https://maven.elpu7.dev"><img alt="Maven repository" height="56" src="https://cdn.sqidgeon.uk/compact-minimal/built-with/maven_vector.svg"></a>
 </p>
 
-Elib is a small, client-side configuration library for Minecraft mods. It provides shared config storage and UI helpers, plus an in-game menu for Elib and mods that register their settings with it.
+Elib is a tiny client-side configuration library for mods. Used specifically in my (Elpu's) mods.
 
 ## Features
 
@@ -30,3 +29,6 @@ Elib is a small, client-side configuration library for Minecraft mods. It provid
 ### Quilt
 
 - [Mod Menu](https://modrinth.com/mod/modmenu) (optional)
+
+## For Developers
+See [the documentation](https://github.com/Elpu7/Elib/wiki) and [Maven repository](https://maven.elpu7.dev/#/releases/dev/elpu7)

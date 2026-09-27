@@ -3,7 +3,7 @@
   "id": "elib",
   "version": "${version}",
   "name": "Elib",
-  "description": "Client-side configuration library for Minecraft mods.",
+  "description": "Tiny configuration library for my mods.",
   "authors": ["Elpu7"],
   "contact": {
     "homepage": "https://modrinth.com/project/elib",
@@ -34,6 +34,7 @@
   },
   "depends": {
     "fabricloader": "${loader_dependency}",
+    "fabric-api": "*",
     "minecraft": "${minecraft_dependency}",
     "java": ">=25"
   },
