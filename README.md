@@ -31,4 +31,4 @@ Elib is a tiny client-side configuration library for mods. Used specifically in 
 - [Mod Menu](https://modrinth.com/mod/modmenu) (optional)
 
 ## For Developers
-See [the documentation](https://github.com/Elpu7/Elib/wiki) and [Maven repository](https://maven.elpu7.dev/#/releases/dev/elpu7)
+See [the documentation](https://github.com/Elpu7/Elib/wiki)
