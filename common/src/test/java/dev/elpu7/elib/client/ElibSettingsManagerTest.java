@@ -20,6 +20,7 @@ final class ElibSettingsManagerTest {
 
         assertTrue(ElibSettingsManager.shouldShowOptionsButton());
         assertTrue(ElibSettingsManager.get().showOptionsButton);
+        assertTrue(ElibSettingsManager.get().configNotifications);
         assertFalse(ElibSettingsManager.setShowOptionsButton(false));
 
         ElibSettingsManager.markModMenuAvailable();
@@ -31,6 +32,8 @@ final class ElibSettingsManagerTest {
 
         assertTrue(ElibSettingsManager.setShowOptionsButton(true));
         assertTrue(ElibSettingsManager.setModMenuIntegration(false));
+        assertTrue(ElibSettingsManager.setConfigNotifications(false));
+        assertFalse(ElibSettingsManager.get().configNotifications);
         assertFalse(ElibSettingsManager.setShowOptionsButton(false));
         assertTrue(Files.readString(directory.resolve("elib.json"))
             .contains("\"modMenuIntegration\": false"));
@@ -38,5 +41,6 @@ final class ElibSettingsManagerTest {
         assertTrue(ElibSettingsManager.resetToDefaults());
         assertTrue(ElibSettingsManager.get().showOptionsButton);
         assertTrue(ElibSettingsManager.get().modMenuIntegration);
+        assertTrue(ElibSettingsManager.get().configNotifications);
     }
 }

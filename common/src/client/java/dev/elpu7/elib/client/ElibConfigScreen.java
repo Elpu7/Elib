@@ -40,9 +40,16 @@ public final class ElibConfigScreen extends Screen {
         }).bounds(ElibScreenStyle.rightButtonX(width), 38,
             ElibScreenStyle.BUTTON_WIDTH, 20).build());
 
+        addRenderableWidget(Button.builder(configNotificationsButtonText(), button -> {
+            ElibSettingsManager.setConfigNotifications(!ElibSettingsManager.get().configNotifications);
+            refreshButtons();
+        }).bounds(ElibScreenStyle.leftButtonX(width), 66,
+            ElibScreenStyle.BUTTON_WIDTH, 20).build());
+
         addRenderableWidget(Button.builder(MODS_BUTTON, button ->
             minecraft.gui.setScreen(new ElibModsScreen(this, parent)))
-            .bounds((width - 200) / 2, 66, 200, 20).build());
+            .bounds(ElibScreenStyle.rightButtonX(width), 66,
+                ElibScreenStyle.BUTTON_WIDTH, 20).build());
 
         optionsButton.active = !ElibSettingsManager.get().showOptionsButton
             || ElibSettingsManager.canHideOptionsButton();
@@ -61,7 +68,10 @@ public final class ElibConfigScreen extends Screen {
 
         int footerY = ElibScreenStyle.footerButtonY(height);
         addRenderableWidget(Button.builder(Component.translatable("screen.elib.reset_defaults"), button -> {
-            ElibSettingsManager.resetToDefaults();
+            boolean notificationsWereEnabled = ElibSettingsManager.get().configNotifications;
+            if (ElibSettingsManager.resetToDefaults() && notificationsWereEnabled) {
+                ElibConfigNotifications.reset();
+            }
             refreshButtons();
         }).bounds(ElibScreenStyle.leftButtonX(width), footerY,
             ElibScreenStyle.BUTTON_WIDTH, 20).build());
@@ -86,6 +96,11 @@ public final class ElibConfigScreen extends Screen {
 
     private static Component modMenuButtonText() {
         return Component.translatable("screen.elib.modmenu_integration", onOff(ElibSettingsManager.get().modMenuIntegration));
+    }
+
+    private static Component configNotificationsButtonText() {
+        return Component.translatable("screen.elib.config_notifications",
+            onOff(ElibSettingsManager.get().configNotifications));
     }
 
     private static Component onOff(boolean enabled) {

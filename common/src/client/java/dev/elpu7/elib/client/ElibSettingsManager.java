@@ -76,9 +76,15 @@ public final class ElibSettingsManager {
         return save();
     }
 
+    public static boolean setConfigNotifications(boolean enabled) {
+        get().configNotifications = enabled;
+        return save();
+    }
+
     public static boolean resetToDefaults() {
         get().showOptionsButton = true;
         get().modMenuIntegration = true;
+        get().configNotifications = true;
         return save();
     }
 

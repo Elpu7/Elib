@@ -18,11 +18,17 @@ public final class ElibConfigRegistry {
 
     public static synchronized void register(String modId, Component name, Identifier icon,
                                              Function<Screen, Screen> screenFactory) {
+        register(modId, name, "", icon, screenFactory);
+    }
+
+    public static synchronized void register(String modId, Component name, String version, Identifier icon,
+                                             Function<Screen, Screen> screenFactory) {
         Objects.requireNonNull(modId, "modId");
         if (modId.isBlank()) {
             throw new IllegalArgumentException("modId must not be blank");
         }
-        ENTRIES.put(modId, new Entry(modId, Objects.requireNonNull(name, "name"), icon,
+        ENTRIES.put(modId, new Entry(modId, Objects.requireNonNull(name, "name"),
+            Objects.requireNonNull(version, "version"), icon,
             Objects.requireNonNull(screenFactory, "screenFactory")));
     }
 
@@ -30,7 +36,7 @@ public final class ElibConfigRegistry {
         return List.copyOf(ENTRIES.values());
     }
 
-    public record Entry(String modId, Component name, Identifier icon,
+    public record Entry(String modId, Component name, String version, Identifier icon,
                         Function<Screen, Screen> screenFactory) {
         public Screen createScreen(Screen parent) {
             return screenFactory.apply(parent);

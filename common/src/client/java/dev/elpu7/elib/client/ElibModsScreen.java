@@ -2,6 +2,7 @@ package dev.elpu7.elib.client;
 
 import java.util.ArrayList;
 import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.StringWidget;
@@ -48,7 +49,10 @@ public final class ElibModsScreen extends Screen {
                 if (entry.icon() != null) {
                     icons.add(new IconPlacement(entry.icon(), iconX, y));
                 }
-                addRenderableWidget(Button.builder(entry.name(), button ->
+                Component label = entry.version().isBlank() ? entry.name() : Component.empty()
+                    .append(entry.name())
+                    .append(Component.literal("  " + entry.version()).withStyle(ChatFormatting.GRAY));
+                addRenderableWidget(Button.builder(label, button ->
                     minecraft.gui.setScreen(entry.createScreen(this)))
                     .bounds(buttonX, y, MOD_BUTTON_WIDTH, MOD_BUTTON_HEIGHT)
                     .build());
