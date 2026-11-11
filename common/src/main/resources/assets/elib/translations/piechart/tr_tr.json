@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Performans grafiğini aç/kapat",
+  "key.piechart.open_editor": "PieChart düzenleyicisini aç",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Konumu ve ölçeği anında ayarla",
+  "screen.piechart.instructions": "Grafiği taşımak için önizlemeyi sürükleyin. Ölçeği kaydırıcıyla veya önizleme üzerinde fare tekerleğiyle ayarlayın.",
+  "screen.piechart.preview": "Canlı önizleme",
+  "screen.piechart.scale_slider": "Ölçek: %s",
+  "screen.piechart.scale_value": "Geçerli ölçek: %s",
+  "screen.piechart.offset_x": "X kaydırması: %s",
+  "screen.piechart.offset_y": "Y kaydırması: %s",
+  "screen.piechart.hint_drag": "Taşımak için önizlemede sürükle",
+  "screen.piechart.hint_scroll": "Ölçeklemek için önizlemede kaydır",
+  "screen.piechart.reset": "Varsayılanları geri yükle",
+  "screen.piechart.done": "Tamam",
+  "message.piechart.config_save_failed": "PieChart ayarları kaydedilemedi"
+}

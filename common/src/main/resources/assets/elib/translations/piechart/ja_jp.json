@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "パフォーマンスグラフの切り替え",
+  "key.piechart.open_editor": "PieChartエディターを開く",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "位置と大きさをリアルタイムで調整",
+  "screen.piechart.instructions": "プレビューをドラッグしてグラフを移動します。スライダーまたはプレビュー上のマウスホイールで大きさを調整できます。",
+  "screen.piechart.preview": "ライブプレビュー",
+  "screen.piechart.scale_slider": "倍率: %s",
+  "screen.piechart.scale_value": "現在の倍率: %s",
+  "screen.piechart.offset_x": "X方向の移動量: %s",
+  "screen.piechart.offset_y": "Y方向の移動量: %s",
+  "screen.piechart.hint_drag": "プレビュー内をドラッグして移動",
+  "screen.piechart.hint_scroll": "プレビュー内をスクロールして拡大・縮小",
+  "screen.piechart.reset": "初期設定に戻す",
+  "screen.piechart.done": "完了",
+  "message.piechart.config_save_failed": "PieChartの設定を保存できませんでした"
+}

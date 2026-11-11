@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "प्रदर्शन चार्ट चालू/बंद करें",
+  "key.piechart.open_editor": "PieChart संपादक खोलें",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "स्थान और आकार तुरंत बदलें",
+  "screen.piechart.instructions": "चार्ट को हिलाने के लिए पूर्वावलोकन खींचें। आकार बदलने के लिए स्लाइडर या पूर्वावलोकन पर माउस व्हील का उपयोग करें।",
+  "screen.piechart.preview": "लाइव पूर्वावलोकन",
+  "screen.piechart.scale_slider": "आकार: %s",
+  "screen.piechart.scale_value": "वर्तमान आकार: %s",
+  "screen.piechart.offset_x": "X विस्थापन: %s",
+  "screen.piechart.offset_y": "Y विस्थापन: %s",
+  "screen.piechart.hint_drag": "हिलाने के लिए पूर्वावलोकन में खींचें",
+  "screen.piechart.hint_scroll": "आकार बदलने के लिए पूर्वावलोकन में स्क्रॉल करें",
+  "screen.piechart.reset": "डिफ़ॉल्ट बहाल करें",
+  "screen.piechart.done": "पूर्ण",
+  "message.piechart.config_save_failed": "PieChart सेटिंग्स सहेजी नहीं जा सकीं"
+}

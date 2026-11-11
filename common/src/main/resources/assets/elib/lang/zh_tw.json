@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib 設定",
+  "screen.elib.mods_button": "模組設定...",
+  "screen.elib.no_mods": "未安裝支援的模組",
+  "screen.elib.options_button": "選項畫面按鈕：%s",
+  "screen.elib.modmenu_integration": "Mod Menu 整合：%s",
+  "screen.elib.config_notifications": "設定通知：%s",
+  "screen.elib.reset_defaults": "還原預設值",
+  "screen.elib.on": "開",
+  "screen.elib.off": "關",
+  "screen.elib.modmenu_restart": "變更 Mod Menu 整合後，請重新啟動 Minecraft。",
+  "screen.elib.keep_entrypoint": "請至少保留一種開啟 Elib 設定的方式。",
+  "screen.elib.modmenu_unavailable": "此模組載入器未安裝 Mod Menu。",
+  "toast.elib.reset": "已重設設定！",
+  "screen.elib.language": "語言：%s",
+  "screen.elib.language.title": "語言",
+  "screen.elib.language.auto": "跟隨 Minecraft",
+  "screen.elib.language.info": "套用至 Elib 與已註冊的模組。",
+  "screen.elib.language.save_failed": "無法儲存語言設定。",
+  "screen.elib.done": "完成",
+  "screen.elib.option": "%s：%s"
+}

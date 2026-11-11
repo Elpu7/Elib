@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "تبديل مخطط الأداء",
+  "key.piechart.open_editor": "فتح محرّر PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "ضبط الموضع والحجم مباشرة",
+  "screen.piechart.instructions": "اسحب المعاينة لنقل المخطط. عدّل الحجم باستخدام شريط التمرير أو عجلة الفأرة فوق المعاينة.",
+  "screen.piechart.preview": "معاينة مباشرة",
+  "screen.piechart.scale_slider": "المقياس: %s",
+  "screen.piechart.scale_value": "المقياس الحالي: %s",
+  "screen.piechart.offset_x": "إزاحة X: %s",
+  "screen.piechart.offset_y": "إزاحة Y: %s",
+  "screen.piechart.hint_drag": "اسحب داخل المعاينة للنقل",
+  "screen.piechart.hint_scroll": "مرّر داخل المعاينة لتغيير الحجم",
+  "screen.piechart.reset": "استعادة الافتراضيات",
+  "screen.piechart.done": "تم",
+  "message.piechart.config_save_failed": "تعذّر حفظ إعدادات PieChart"
+}

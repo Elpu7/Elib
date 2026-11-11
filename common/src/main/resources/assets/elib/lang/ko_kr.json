@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib 설정",
+  "screen.elib.mods_button": "모드 설정...",
+  "screen.elib.no_mods": "지원되는 모드가 설치되어 있지 않습니다",
+  "screen.elib.options_button": "설정 화면 버튼: %s",
+  "screen.elib.modmenu_integration": "Mod Menu 연동: %s",
+  "screen.elib.config_notifications": "설정 알림: %s",
+  "screen.elib.reset_defaults": "기본값 복원",
+  "screen.elib.on": "켜짐",
+  "screen.elib.off": "꺼짐",
+  "screen.elib.modmenu_restart": "Mod Menu 연동을 변경한 후 Minecraft를 다시 시작하세요.",
+  "screen.elib.keep_entrypoint": "Elib 설정을 여는 방법을 최소 하나는 켜 두세요.",
+  "screen.elib.modmenu_unavailable": "이 모드 로더에 Mod Menu가 설치되어 있지 않습니다.",
+  "toast.elib.reset": "설정이 초기화되었습니다!",
+  "screen.elib.language": "언어: %s",
+  "screen.elib.language.title": "언어",
+  "screen.elib.language.auto": "Minecraft 언어",
+  "screen.elib.language.info": "Elib 및 등록된 모드에 적용됩니다.",
+  "screen.elib.language.save_failed": "언어 설정을 저장할 수 없습니다.",
+  "screen.elib.done": "완료",
+  "screen.elib.option": "%s: %s"
+}

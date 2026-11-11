@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Настройки Elib",
+  "screen.elib.mods_button": "Настройки модов...",
+  "screen.elib.no_mods": "Поддерживаемые моды не установлены",
+  "screen.elib.options_button": "Кнопка в настройках: %s",
+  "screen.elib.modmenu_integration": "Интеграция с Mod Menu: %s",
+  "screen.elib.config_notifications": "Уведомления о настройках: %s",
+  "screen.elib.reset_defaults": "Восстановить по умолчанию",
+  "screen.elib.on": "Вкл.",
+  "screen.elib.off": "Выкл.",
+  "screen.elib.modmenu_restart": "Перезапустите Minecraft после изменения интеграции с Mod Menu.",
+  "screen.elib.keep_entrypoint": "Оставьте включённым хотя бы один способ открытия настроек Elib.",
+  "screen.elib.modmenu_unavailable": "Mod Menu не установлен для этого загрузчика модов.",
+  "toast.elib.reset": "Настройки сброшены!",
+  "screen.elib.language": "Язык: %s",
+  "screen.elib.language.title": "Язык",
+  "screen.elib.language.auto": "Язык Minecraft",
+  "screen.elib.language.info": "Применяется к Elib и зарегистрированным модам.",
+  "screen.elib.language.save_failed": "Не удалось сохранить выбранный язык.",
+  "screen.elib.done": "Готово",
+  "screen.elib.option": "%s: %s"
+}

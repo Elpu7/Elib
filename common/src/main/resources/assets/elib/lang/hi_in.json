@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib सेटिंग्स",
+  "screen.elib.mods_button": "मॉड सेटिंग्स...",
+  "screen.elib.no_mods": "कोई समर्थित मॉड इंस्टॉल नहीं है",
+  "screen.elib.options_button": "विकल्पों में बटन: %s",
+  "screen.elib.modmenu_integration": "Mod Menu एकीकरण: %s",
+  "screen.elib.config_notifications": "सेटिंग्स सूचनाएँ: %s",
+  "screen.elib.reset_defaults": "डिफ़ॉल्ट बहाल करें",
+  "screen.elib.on": "चालू",
+  "screen.elib.off": "बंद",
+  "screen.elib.modmenu_restart": "Mod Menu एकीकरण बदलने के बाद Minecraft को फिर से शुरू करें।",
+  "screen.elib.keep_entrypoint": "Elib सेटिंग्स खोलने का कम से कम एक तरीका चालू रखें।",
+  "screen.elib.modmenu_unavailable": "इस मॉड लोडर के लिए Mod Menu इंस्टॉल नहीं है।",
+  "toast.elib.reset": "सेटिंग्स रीसेट हो गई हैं!",
+  "screen.elib.language": "भाषा: %s",
+  "screen.elib.language.title": "भाषा",
+  "screen.elib.language.auto": "Minecraft की भाषा",
+  "screen.elib.language.info": "Elib और पंजीकृत मॉड पर लागू होता है।",
+  "screen.elib.language.save_failed": "भाषा की पसंद सहेजी नहीं जा सकी।",
+  "screen.elib.done": "पूर्ण",
+  "screen.elib.option": "%s: %s"
+}

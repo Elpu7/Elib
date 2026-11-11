@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib Ayarları",
+  "screen.elib.mods_button": "Mod ayarları...",
+  "screen.elib.no_mods": "Desteklenen mod yüklü değil",
+  "screen.elib.options_button": "Seçeneklerde düğme: %s",
+  "screen.elib.modmenu_integration": "Mod Menu entegrasyonu: %s",
+  "screen.elib.config_notifications": "Ayar bildirimleri: %s",
+  "screen.elib.reset_defaults": "Varsayılanları geri yükle",
+  "screen.elib.on": "Açık",
+  "screen.elib.off": "Kapalı",
+  "screen.elib.modmenu_restart": "Mod Menu entegrasyonunu değiştirdikten sonra Minecraft’ı yeniden başlatın.",
+  "screen.elib.keep_entrypoint": "Elib ayarlarını açmak için en az bir yöntemi etkin tutun.",
+  "screen.elib.modmenu_unavailable": "Bu mod yükleyici için Mod Menu yüklü değil.",
+  "toast.elib.reset": "Ayarlar sıfırlandı!",
+  "screen.elib.language": "Dil: %s",
+  "screen.elib.language.title": "Dil",
+  "screen.elib.language.auto": "Minecraft dili",
+  "screen.elib.language.info": "Elib ve kayıtlı modlar için geçerlidir.",
+  "screen.elib.language.save_failed": "Dil tercihi kaydedilemedi.",
+  "screen.elib.done": "Tamam",
+  "screen.elib.option": "%s: %s"
+}

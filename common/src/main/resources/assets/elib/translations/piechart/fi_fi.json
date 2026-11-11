@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Vaihda suorituskykykaavion tilaa",
+  "key.piechart.open_editor": "Avaa PieChart-muokkain",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Säädä sijaintia ja kokoa reaaliajassa",
+  "screen.piechart.instructions": "Siirrä kaaviota raahaamalla esikatselua. Säädä kokoa liukusäätimellä tai hiiren rullalla esikatselun päällä.",
+  "screen.piechart.preview": "Esikatselu",
+  "screen.piechart.scale_slider": "Koko: %s",
+  "screen.piechart.scale_value": "Nykyinen koko: %s",
+  "screen.piechart.offset_x": "X-siirtymä: %s",
+  "screen.piechart.offset_y": "Y-siirtymä: %s",
+  "screen.piechart.hint_drag": "Siirrä raahaamalla esikatselua",
+  "screen.piechart.hint_scroll": "Muuta kokoa rullaamalla esikatselussa",
+  "screen.piechart.reset": "Palauta oletukset",
+  "screen.piechart.done": "Valmis",
+  "message.piechart.config_save_failed": "PieChartin asetusten tallentaminen epäonnistui"
+}

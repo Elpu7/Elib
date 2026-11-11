@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Tampilkan/sembunyikan grafik kinerja",
+  "key.piechart.open_editor": "Buka editor PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Sesuaikan posisi dan skala secara langsung",
+  "screen.piechart.instructions": "Seret pratinjau untuk memindahkan grafik. Sesuaikan skala dengan penggeser atau roda tetikus di atas pratinjau.",
+  "screen.piechart.preview": "Pratinjau langsung",
+  "screen.piechart.scale_slider": "Skala: %s",
+  "screen.piechart.scale_value": "Skala saat ini: %s",
+  "screen.piechart.offset_x": "Pergeseran X: %s",
+  "screen.piechart.offset_y": "Pergeseran Y: %s",
+  "screen.piechart.hint_drag": "Seret di pratinjau untuk memindahkan",
+  "screen.piechart.hint_scroll": "Gulir di pratinjau untuk mengubah skala",
+  "screen.piechart.reset": "Pulihkan bawaan",
+  "screen.piechart.done": "Selesai",
+  "message.piechart.config_save_failed": "Pengaturan PieChart tidak dapat disimpan"
+}

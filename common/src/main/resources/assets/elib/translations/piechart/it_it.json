@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Mostra/nascondi grafico prestazioni",
+  "key.piechart.open_editor": "Apri editor PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Regola posizione e scala in tempo reale",
+  "screen.piechart.instructions": "Trascina l’anteprima per spostare il grafico. Regola la scala con il cursore o la rotellina sull’anteprima.",
+  "screen.piechart.preview": "Anteprima in tempo reale",
+  "screen.piechart.scale_slider": "Scala: %s",
+  "screen.piechart.scale_value": "Scala attuale: %s",
+  "screen.piechart.offset_x": "Spostamento X: %s",
+  "screen.piechart.offset_y": "Spostamento Y: %s",
+  "screen.piechart.hint_drag": "Trascina nell’anteprima per spostare",
+  "screen.piechart.hint_scroll": "Scorri nell’anteprima per ridimensionare",
+  "screen.piechart.reset": "Ripristina predefiniti",
+  "screen.piechart.done": "Fatto",
+  "message.piechart.config_save_failed": "Impossibile salvare le impostazioni di PieChart"
+}

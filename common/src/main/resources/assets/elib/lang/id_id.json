@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Pengaturan Elib",
+  "screen.elib.mods_button": "Pengaturan mod...",
+  "screen.elib.no_mods": "Tidak ada mod yang didukung terpasang",
+  "screen.elib.options_button": "Tombol di opsi: %s",
+  "screen.elib.modmenu_integration": "Integrasi Mod Menu: %s",
+  "screen.elib.config_notifications": "Notifikasi pengaturan: %s",
+  "screen.elib.reset_defaults": "Pulihkan bawaan",
+  "screen.elib.on": "Aktif",
+  "screen.elib.off": "Nonaktif",
+  "screen.elib.modmenu_restart": "Mulai ulang Minecraft setelah mengubah integrasi Mod Menu.",
+  "screen.elib.keep_entrypoint": "Tetap aktifkan setidaknya satu cara untuk membuka pengaturan Elib.",
+  "screen.elib.modmenu_unavailable": "Mod Menu tidak terpasang untuk pemuat mod ini.",
+  "toast.elib.reset": "Pengaturan telah direset!",
+  "screen.elib.language": "Bahasa: %s",
+  "screen.elib.language.title": "Bahasa",
+  "screen.elib.language.auto": "Bahasa Minecraft",
+  "screen.elib.language.info": "Berlaku untuk Elib dan mod yang terdaftar.",
+  "screen.elib.language.save_failed": "Pilihan bahasa tidak dapat disimpan.",
+  "screen.elib.done": "Selesai",
+  "screen.elib.option": "%s: %s"
+}

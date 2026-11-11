@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elibの設定",
+  "screen.elib.mods_button": "Modの設定...",
+  "screen.elib.no_mods": "対応するModがインストールされていません",
+  "screen.elib.options_button": "設定画面のボタン: %s",
+  "screen.elib.modmenu_integration": "Mod Menu連携: %s",
+  "screen.elib.config_notifications": "設定の通知: %s",
+  "screen.elib.reset_defaults": "初期設定に戻す",
+  "screen.elib.on": "オン",
+  "screen.elib.off": "オフ",
+  "screen.elib.modmenu_restart": "Mod Menu連携を変更した後はMinecraftを再起動してください。",
+  "screen.elib.keep_entrypoint": "Elibの設定を開く方法を少なくとも1つ有効にしてください。",
+  "screen.elib.modmenu_unavailable": "このModローダーにはMod Menuがインストールされていません。",
+  "toast.elib.reset": "設定をリセットしました！",
+  "screen.elib.language": "言語: %s",
+  "screen.elib.language.title": "言語",
+  "screen.elib.language.auto": "Minecraftの言語",
+  "screen.elib.language.info": "Elibと登録されたModに適用されます。",
+  "screen.elib.language.save_failed": "言語設定を保存できませんでした。",
+  "screen.elib.done": "完了",
+  "screen.elib.option": "%s: %s"
+}

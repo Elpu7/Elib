@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "切换性能饼图",
+  "key.piechart.open_editor": "打开 PieChart 编辑器",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "实时调整位置和缩放",
+  "screen.piechart.instructions": "拖动预览以移动图表。使用滑块或在预览上滚动鼠标滚轮调整缩放。",
+  "screen.piechart.preview": "实时预览",
+  "screen.piechart.scale_slider": "缩放：%s",
+  "screen.piechart.scale_value": "当前缩放：%s",
+  "screen.piechart.offset_x": "X 偏移：%s",
+  "screen.piechart.offset_y": "Y 偏移：%s",
+  "screen.piechart.hint_drag": "在预览内拖动以移动",
+  "screen.piechart.hint_scroll": "在预览内滚动以缩放",
+  "screen.piechart.reset": "恢复默认设置",
+  "screen.piechart.done": "完成",
+  "message.piechart.config_save_failed": "无法保存 PieChart 设置"
+}

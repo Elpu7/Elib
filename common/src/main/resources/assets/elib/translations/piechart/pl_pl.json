@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Włącz/wyłącz wykres wydajności",
+  "key.piechart.open_editor": "Otwórz edytor PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Dostosuj położenie i skalę na żywo",
+  "screen.piechart.instructions": "Przeciągnij podgląd, aby przesunąć wykres. Zmień skalę suwakiem lub kółkiem myszy nad podglądem.",
+  "screen.piechart.preview": "Podgląd na żywo",
+  "screen.piechart.scale_slider": "Skala: %s",
+  "screen.piechart.scale_value": "Obecna skala: %s",
+  "screen.piechart.offset_x": "Przesunięcie X: %s",
+  "screen.piechart.offset_y": "Przesunięcie Y: %s",
+  "screen.piechart.hint_drag": "Przeciągnij w podglądzie, aby przesunąć",
+  "screen.piechart.hint_scroll": "Przewiń w podglądzie, aby zmienić skalę",
+  "screen.piechart.reset": "Przywróć domyślne",
+  "screen.piechart.done": "Gotowe",
+  "message.piechart.config_save_failed": "Nie udało się zapisać ustawień PieChart"
+}

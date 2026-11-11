@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Afficher/masquer le graphique de performances",
+  "key.piechart.open_editor": "Ouvrir l’éditeur PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Ajuster la position et l’échelle en direct",
+  "screen.piechart.instructions": "Faites glisser l’aperçu pour déplacer le graphique. Ajustez l’échelle avec le curseur ou la molette sur l’aperçu.",
+  "screen.piechart.preview": "Aperçu en direct",
+  "screen.piechart.scale_slider": "Échelle : %s",
+  "screen.piechart.scale_value": "Échelle actuelle : %s",
+  "screen.piechart.offset_x": "Décalage X : %s",
+  "screen.piechart.offset_y": "Décalage Y : %s",
+  "screen.piechart.hint_drag": "Faire glisser l’aperçu pour déplacer",
+  "screen.piechart.hint_scroll": "Défiler sur l’aperçu pour redimensionner",
+  "screen.piechart.reset": "Rétablir les valeurs par défaut",
+  "screen.piechart.done": "Terminé",
+  "message.piechart.config_save_failed": "Impossible d’enregistrer les paramètres de PieChart"
+}

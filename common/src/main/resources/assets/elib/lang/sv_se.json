@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib-inställningar",
+  "screen.elib.mods_button": "Modinställningar...",
+  "screen.elib.no_mods": "Inga moddar som stöds är installerade",
+  "screen.elib.options_button": "Knapp i inställningar: %s",
+  "screen.elib.modmenu_integration": "Mod Menu-integration: %s",
+  "screen.elib.config_notifications": "Inställningsaviseringar: %s",
+  "screen.elib.reset_defaults": "Återställ standardvärden",
+  "screen.elib.on": "På",
+  "screen.elib.off": "Av",
+  "screen.elib.modmenu_restart": "Starta om Minecraft efter att du ändrat Mod Menu-integrationen.",
+  "screen.elib.keep_entrypoint": "Behåll minst ett sätt att öppna Elib-inställningarna.",
+  "screen.elib.modmenu_unavailable": "Mod Menu är inte installerat för denna moddladdare.",
+  "toast.elib.reset": "Inställningarna har återställts!",
+  "screen.elib.language": "Språk: %s",
+  "screen.elib.language.title": "Språk",
+  "screen.elib.language.auto": "Minecrafts språk",
+  "screen.elib.language.info": "Gäller Elib och registrerade moddar.",
+  "screen.elib.language.save_failed": "Kunde inte spara språkvalet.",
+  "screen.elib.done": "Klart",
+  "screen.elib.option": "%s: %s"
+}

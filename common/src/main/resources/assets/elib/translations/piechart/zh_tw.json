@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "切換效能圓餅圖",
+  "key.piechart.open_editor": "開啟 PieChart 編輯器",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "即時調整位置與縮放",
+  "screen.piechart.instructions": "拖曳預覽以移動圖表。使用滑桿或在預覽上捲動滑鼠滾輪調整縮放。",
+  "screen.piechart.preview": "即時預覽",
+  "screen.piechart.scale_slider": "縮放：%s",
+  "screen.piechart.scale_value": "目前縮放：%s",
+  "screen.piechart.offset_x": "X 位移：%s",
+  "screen.piechart.offset_y": "Y 位移：%s",
+  "screen.piechart.hint_drag": "在預覽內拖曳以移動",
+  "screen.piechart.hint_scroll": "在預覽內捲動以縮放",
+  "screen.piechart.reset": "還原預設值",
+  "screen.piechart.done": "完成",
+  "message.piechart.config_save_failed": "無法儲存 PieChart 設定"
+}

@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Показати/приховати діаграму продуктивності",
+  "key.piechart.open_editor": "Відкрити редактор PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Змінюйте положення та масштаб наживо",
+  "screen.piechart.instructions": "Перетягніть попередній перегляд, щоб перемістити діаграму. Змінюйте масштаб повзунком або коліщатком миші над переглядом.",
+  "screen.piechart.preview": "Попередній перегляд",
+  "screen.piechart.scale_slider": "Масштаб: %s",
+  "screen.piechart.scale_value": "Поточний масштаб: %s",
+  "screen.piechart.offset_x": "Зміщення X: %s",
+  "screen.piechart.offset_y": "Зміщення Y: %s",
+  "screen.piechart.hint_drag": "Перетягуйте перегляд для переміщення",
+  "screen.piechart.hint_scroll": "Прокручуйте перегляд для зміни масштабу",
+  "screen.piechart.reset": "Відновити типові",
+  "screen.piechart.done": "Готово",
+  "message.piechart.config_save_failed": "Не вдалося зберегти налаштування PieChart"
+}

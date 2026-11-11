@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "إعدادات Elib",
+  "screen.elib.mods_button": "إعدادات المودات...",
+  "screen.elib.no_mods": "لا توجد مودات مدعومة مثبتة",
+  "screen.elib.options_button": "زر في الخيارات: %s",
+  "screen.elib.modmenu_integration": "تكامل Mod Menu: %s",
+  "screen.elib.config_notifications": "إشعارات الإعدادات: %s",
+  "screen.elib.reset_defaults": "استعادة الافتراضيات",
+  "screen.elib.on": "مفعّل",
+  "screen.elib.off": "معطّل",
+  "screen.elib.modmenu_restart": "أعد تشغيل Minecraft بعد تغيير تكامل Mod Menu.",
+  "screen.elib.keep_entrypoint": "أبقِ طريقة واحدة على الأقل لفتح إعدادات Elib مفعّلة.",
+  "screen.elib.modmenu_unavailable": "Mod Menu غير مثبت لمحمّل المودات هذا.",
+  "toast.elib.reset": "تمت إعادة ضبط الإعدادات!",
+  "screen.elib.language": "اللغة: %s",
+  "screen.elib.language.title": "اللغة",
+  "screen.elib.language.auto": "لغة Minecraft",
+  "screen.elib.language.info": "ينطبق على Elib والمودات المسجّلة.",
+  "screen.elib.language.save_failed": "تعذّر حفظ اختيار اللغة.",
+  "screen.elib.done": "تم",
+  "screen.elib.option": "%s: %s"
+}

@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elib-instellingen",
+  "screen.elib.mods_button": "Modinstellingen...",
+  "screen.elib.no_mods": "Geen ondersteunde mods geïnstalleerd",
+  "screen.elib.options_button": "Knop in opties: %s",
+  "screen.elib.modmenu_integration": "Mod Menu-integratie: %s",
+  "screen.elib.config_notifications": "Instellingsmeldingen: %s",
+  "screen.elib.reset_defaults": "Standaardwaarden herstellen",
+  "screen.elib.on": "Aan",
+  "screen.elib.off": "Uit",
+  "screen.elib.modmenu_restart": "Herstart Minecraft nadat je de Mod Menu-integratie hebt gewijzigd.",
+  "screen.elib.keep_entrypoint": "Houd minstens één manier om de Elib-instellingen te openen ingeschakeld.",
+  "screen.elib.modmenu_unavailable": "Mod Menu is niet geïnstalleerd voor deze modloader.",
+  "toast.elib.reset": "De instellingen zijn hersteld!",
+  "screen.elib.language": "Taal: %s",
+  "screen.elib.language.title": "Taal",
+  "screen.elib.language.auto": "Taal van Minecraft",
+  "screen.elib.language.info": "Geldt voor Elib en geregistreerde mods.",
+  "screen.elib.language.save_failed": "De taalkeuze kon niet worden opgeslagen.",
+  "screen.elib.done": "Gereed",
+  "screen.elib.option": "%s: %s"
+}

@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Elibin asetukset",
+  "screen.elib.mods_button": "Modien asetukset...",
+  "screen.elib.no_mods": "Tuettuja modeja ei ole asennettu",
+  "screen.elib.options_button": "Painike asetuksissa: %s",
+  "screen.elib.modmenu_integration": "Mod Menu -integraatio: %s",
+  "screen.elib.config_notifications": "Asetusilmoitukset: %s",
+  "screen.elib.reset_defaults": "Palauta oletukset",
+  "screen.elib.on": "Päällä",
+  "screen.elib.off": "Pois",
+  "screen.elib.modmenu_restart": "Käynnistä Minecraft uudelleen Mod Menu -integraation muuttamisen jälkeen.",
+  "screen.elib.keep_entrypoint": "Pidä vähintään yksi Elibin asetusten avaustapa käytössä.",
+  "screen.elib.modmenu_unavailable": "Mod Menua ei ole asennettu tälle lataajalle.",
+  "toast.elib.reset": "Asetukset palautettiin oletuksiin!",
+  "screen.elib.language": "Kieli: %s",
+  "screen.elib.language.title": "Kieli",
+  "screen.elib.language.auto": "Minecraftin kieli",
+  "screen.elib.language.info": "Vaikuttaa Elibiin ja siihen rekisteröityihin modeihin.",
+  "screen.elib.language.save_failed": "Kielivalinnan tallentaminen epäonnistui.",
+  "screen.elib.done": "Valmis",
+  "screen.elib.option": "%s: %s"
+}

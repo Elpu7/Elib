@@ -1,0 +1,22 @@
+{
+  "screen.elib.title": "Налаштування Elib",
+  "screen.elib.mods_button": "Налаштування модів...",
+  "screen.elib.no_mods": "Підтримувані моди не встановлено",
+  "screen.elib.options_button": "Кнопка в налаштуваннях: %s",
+  "screen.elib.modmenu_integration": "Інтеграція з Mod Menu: %s",
+  "screen.elib.config_notifications": "Сповіщення налаштувань: %s",
+  "screen.elib.reset_defaults": "Відновити типові",
+  "screen.elib.on": "Увімк.",
+  "screen.elib.off": "Вимк.",
+  "screen.elib.modmenu_restart": "Перезапустіть Minecraft після зміни інтеграції з Mod Menu.",
+  "screen.elib.keep_entrypoint": "Залиште ввімкненим принаймні один спосіб відкриття налаштувань Elib.",
+  "screen.elib.modmenu_unavailable": "Mod Menu не встановлено для цього завантажувача модів.",
+  "toast.elib.reset": "Налаштування скинуто!",
+  "screen.elib.language": "Мова: %s",
+  "screen.elib.language.title": "Мова",
+  "screen.elib.language.auto": "Мова Minecraft",
+  "screen.elib.language.info": "Застосовується до Elib і зареєстрованих модів.",
+  "screen.elib.language.save_failed": "Не вдалося зберегти вибрану мову.",
+  "screen.elib.done": "Готово",
+  "screen.elib.option": "%s: %s"
+}

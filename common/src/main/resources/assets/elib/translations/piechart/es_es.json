@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Mostrar/ocultar gráfico de rendimiento",
+  "key.piechart.open_editor": "Abrir editor de PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Ajusta posición y escala en directo",
+  "screen.piechart.instructions": "Arrastra la vista previa para mover el gráfico. Ajusta la escala con el control deslizante o la rueda sobre la vista previa.",
+  "screen.piechart.preview": "Vista previa",
+  "screen.piechart.scale_slider": "Escala: %s",
+  "screen.piechart.scale_value": "Escala actual: %s",
+  "screen.piechart.offset_x": "Desplazamiento X: %s",
+  "screen.piechart.offset_y": "Desplazamiento Y: %s",
+  "screen.piechart.hint_drag": "Arrastra la vista previa para mover",
+  "screen.piechart.hint_scroll": "Usa la rueda en la vista previa para escalar",
+  "screen.piechart.reset": "Restablecer valores",
+  "screen.piechart.done": "Hecho",
+  "message.piechart.config_save_failed": "No se pudieron guardar los ajustes de PieChart"
+}

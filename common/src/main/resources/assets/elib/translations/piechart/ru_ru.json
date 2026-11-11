@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Показать/скрыть диаграмму производительности",
+  "key.piechart.open_editor": "Открыть редактор PieChart",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Меняйте положение и размер в реальном времени",
+  "screen.piechart.instructions": "Перетащите предпросмотр, чтобы переместить диаграмму. Меняйте масштаб ползунком или колёсиком мыши над предпросмотром.",
+  "screen.piechart.preview": "Предпросмотр",
+  "screen.piechart.scale_slider": "Масштаб: %s",
+  "screen.piechart.scale_value": "Текущий масштаб: %s",
+  "screen.piechart.offset_x": "Смещение X: %s",
+  "screen.piechart.offset_y": "Смещение Y: %s",
+  "screen.piechart.hint_drag": "Перетаскивайте предпросмотр для перемещения",
+  "screen.piechart.hint_scroll": "Прокручивайте предпросмотр для изменения масштаба",
+  "screen.piechart.reset": "Восстановить по умолчанию",
+  "screen.piechart.done": "Готово",
+  "message.piechart.config_save_failed": "Не удалось сохранить настройки PieChart"
+}

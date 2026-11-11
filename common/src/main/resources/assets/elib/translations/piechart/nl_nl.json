@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Prestatiediagram aan/uit",
+  "key.piechart.open_editor": "PieChart-editor openen",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Positie en schaal direct aanpassen",
+  "screen.piechart.instructions": "Versleep het voorbeeld om het diagram te verplaatsen. Pas de schaal aan met de schuifregelaar of het muiswiel boven het voorbeeld.",
+  "screen.piechart.preview": "Livevoorbeeld",
+  "screen.piechart.scale_slider": "Schaal: %s",
+  "screen.piechart.scale_value": "Huidige schaal: %s",
+  "screen.piechart.offset_x": "X-verschuiving: %s",
+  "screen.piechart.offset_y": "Y-verschuiving: %s",
+  "screen.piechart.hint_drag": "Sleep in het voorbeeld om te verplaatsen",
+  "screen.piechart.hint_scroll": "Scroll in het voorbeeld om te schalen",
+  "screen.piechart.reset": "Standaardwaarden herstellen",
+  "screen.piechart.done": "Gereed",
+  "message.piechart.config_save_failed": "De instellingen van PieChart konden niet worden opgeslagen"
+}

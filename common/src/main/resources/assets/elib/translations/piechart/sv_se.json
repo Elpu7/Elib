@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Växla prestandadiagram",
+  "key.piechart.open_editor": "Öppna PieChart-redigeraren",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Justera position och skala i realtid",
+  "screen.piechart.instructions": "Dra förhandsvisningen för att flytta diagrammet. Ändra skalan med reglaget eller mushjulet över förhandsvisningen.",
+  "screen.piechart.preview": "Förhandsvisning",
+  "screen.piechart.scale_slider": "Skala: %s",
+  "screen.piechart.scale_value": "Aktuell skala: %s",
+  "screen.piechart.offset_x": "X-förskjutning: %s",
+  "screen.piechart.offset_y": "Y-förskjutning: %s",
+  "screen.piechart.hint_drag": "Dra i förhandsvisningen för att flytta",
+  "screen.piechart.hint_scroll": "Rulla i förhandsvisningen för att ändra skala",
+  "screen.piechart.reset": "Återställ standardvärden",
+  "screen.piechart.done": "Klart",
+  "message.piechart.config_save_failed": "Kunde inte spara PieChart-inställningarna"
+}

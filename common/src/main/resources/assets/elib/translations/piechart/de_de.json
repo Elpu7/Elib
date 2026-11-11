@@ -1,0 +1,19 @@
+{
+  "key.category.piechart": "PieChart",
+  "key.category.piechart.piechart": "PieChart",
+  "key.piechart.toggle_debug_profiler": "Leistungsdiagramm umschalten",
+  "key.piechart.open_editor": "PieChart-Editor öffnen",
+  "screen.piechart.edit_mode": "PieChart",
+  "screen.piechart.subtitle": "Position und Größe live anpassen",
+  "screen.piechart.instructions": "Ziehe die Vorschau, um das Diagramm zu verschieben. Ändere die Größe mit dem Regler oder dem Mausrad über der Vorschau.",
+  "screen.piechart.preview": "Live-Vorschau",
+  "screen.piechart.scale_slider": "Größe: %s",
+  "screen.piechart.scale_value": "Aktuelle Größe: %s",
+  "screen.piechart.offset_x": "X-Versatz: %s",
+  "screen.piechart.offset_y": "Y-Versatz: %s",
+  "screen.piechart.hint_drag": "In der Vorschau zum Verschieben ziehen",
+  "screen.piechart.hint_scroll": "In der Vorschau zum Skalieren scrollen",
+  "screen.piechart.reset": "Standardwerte wiederherstellen",
+  "screen.piechart.done": "Fertig",
+  "message.piechart.config_save_failed": "PieChart-Einstellungen konnten nicht gespeichert werden"
+}
