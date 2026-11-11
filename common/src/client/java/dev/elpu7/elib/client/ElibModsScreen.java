@@ -7,7 +7,6 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.StringWidget;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
@@ -63,7 +62,7 @@ public final class ElibModsScreen extends Screen {
         addRenderableWidget(Button.builder(TITLE, button -> onClose())
             .bounds(ElibScreenStyle.leftButtonX(width), footerY,
                 ElibScreenStyle.BUTTON_WIDTH, 20).build());
-        addRenderableWidget(Button.builder(CommonComponents.GUI_DONE, button ->
+        addRenderableWidget(Button.builder(Component.translatable("screen.elib.done"), button ->
             minecraft.gui.setScreen(rootParent))
             .bounds(ElibScreenStyle.rightButtonX(width), footerY,
                 ElibScreenStyle.BUTTON_WIDTH, 20).build());

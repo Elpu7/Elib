@@ -5,7 +5,6 @@ import net.minecraft.client.gui.components.StringWidget;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 
 public final class ElibConfigScreen extends Screen {
@@ -51,6 +50,17 @@ public final class ElibConfigScreen extends Screen {
             .bounds(ElibScreenStyle.rightButtonX(width), 66,
                 ElibScreenStyle.BUTTON_WIDTH, 20).build());
 
+        Component languageName = ElibLanguage.AUTOMATIC.equals(ElibSettingsManager.languagePreference())
+            ? Component.translatable("screen.elib.language.auto")
+            : Component.literal(ElibLanguage.choices().stream()
+                .filter(choice -> choice.code().equals(ElibSettingsManager.languagePreference()))
+                .findFirst().orElseThrow().name());
+        addRenderableWidget(Button.builder(Component.translatable("screen.elib.language", languageName),
+            button -> minecraft.gui.setScreen(new ElibLanguageScreen(this)))
+            .bounds(ElibScreenStyle.leftButtonX(width), 94,
+                ElibScreenStyle.BUTTON_WIDTH * 2 + ElibScreenStyle.BUTTON_GAP, 20)
+            .tooltip(Tooltip.create(Component.translatable("screen.elib.language.info"))).build());
+
         optionsButton.active = !ElibSettingsManager.get().showOptionsButton
             || ElibSettingsManager.canHideOptionsButton();
         modMenuButton.active = ElibSettingsManager.isModMenuAvailable()
@@ -69,13 +79,16 @@ public final class ElibConfigScreen extends Screen {
         int footerY = ElibScreenStyle.footerButtonY(height);
         addRenderableWidget(Button.builder(Component.translatable("screen.elib.reset_defaults"), button -> {
             boolean notificationsWereEnabled = ElibSettingsManager.get().configNotifications;
-            if (ElibSettingsManager.resetToDefaults() && notificationsWereEnabled) {
-                ElibConfigNotifications.reset();
+            if (ElibSettingsManager.resetToDefaults()) {
+                ElibLanguage.refresh();
+                if (notificationsWereEnabled) {
+                    ElibConfigNotifications.reset();
+                }
             }
             refreshButtons();
         }).bounds(ElibScreenStyle.leftButtonX(width), footerY,
             ElibScreenStyle.BUTTON_WIDTH, 20).build());
-        addRenderableWidget(Button.builder(CommonComponents.GUI_DONE, button -> onClose())
+        addRenderableWidget(Button.builder(Component.translatable("screen.elib.done"), button -> onClose())
             .bounds(ElibScreenStyle.rightButtonX(width), footerY,
                 ElibScreenStyle.BUTTON_WIDTH, 20).build());
     }

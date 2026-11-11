@@ -47,6 +47,7 @@ public final class ElibConfigRegistry {
         ENTRIES.put(modId, new Entry(modId, Objects.requireNonNull(name, "name"),
             Objects.requireNonNull(version, "version"), icon,
             Objects.requireNonNull(screenFactory, "screenFactory")));
+        ElibLanguage.register(modId, screenFactory.getClass());
     }
 
     /**

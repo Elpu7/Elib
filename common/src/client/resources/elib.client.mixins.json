@@ -4,7 +4,8 @@
   "package": "dev.elpu7.elib.mixin.client",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "OptionsScreenMixin"
+    "OptionsScreenMixin",
+    "LanguageMixin"
   ],
   "injectors": {
     "defaultRequire": 1

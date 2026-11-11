@@ -13,6 +13,7 @@ Elib is a tiny client-side configuration library for mods. Used specifically in 
 - Shared configuration tools for Minecraft mods
 - Quick access from Minecraft’s Options menu
 - ModMenu support
+- Centralized translations for supported mods, with 20 languages
 - Client-side only
 
 ## Requirements

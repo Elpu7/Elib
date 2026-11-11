@@ -29,6 +29,8 @@ public final class ConfigWidgets {
         return OptionInstance.createBoolean(
             translationKey,
             OptionInstance.cachedConstantTooltip(Component.translatable(tooltipKey)),
+            (caption, enabled) -> Component.translatable("screen.elib.option", caption,
+                Component.translatable(enabled ? "screen.elib.on" : "screen.elib.off")),
             currentValue.getAsBoolean(),
             onChanged::accept
         );

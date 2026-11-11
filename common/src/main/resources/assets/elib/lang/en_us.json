@@ -11,5 +11,12 @@
   "screen.elib.modmenu_restart": "Restart Minecraft after changing Mod Menu integration.",
   "screen.elib.keep_entrypoint": "Keep at least one way to open Elib settings enabled.",
   "screen.elib.modmenu_unavailable": "Mod Menu is not installed on this loader.",
-  "toast.elib.reset": "Configuration has been reset!"
+  "toast.elib.reset": "Configuration has been reset!",
+  "screen.elib.language": "Language: %s",
+  "screen.elib.language.title": "Language",
+  "screen.elib.language.auto": "Minecraft language",
+  "screen.elib.language.info": "Applies to Elib and registered mods.",
+  "screen.elib.language.save_failed": "Could not save language preference.",
+  "screen.elib.done": "Done",
+  "screen.elib.option": "%s: %s"
 }

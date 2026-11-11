@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 final class ElibSettingsManagerTest {
@@ -21,6 +22,7 @@ final class ElibSettingsManagerTest {
         assertTrue(ElibSettingsManager.shouldShowOptionsButton());
         assertTrue(ElibSettingsManager.get().showOptionsButton);
         assertTrue(ElibSettingsManager.get().configNotifications);
+        assertEquals("auto", ElibSettingsManager.languagePreference());
         assertFalse(ElibSettingsManager.setShowOptionsButton(false));
 
         ElibSettingsManager.markModMenuAvailable();
@@ -37,10 +39,14 @@ final class ElibSettingsManagerTest {
         assertFalse(ElibSettingsManager.setShowOptionsButton(false));
         assertTrue(Files.readString(directory.resolve("elib.json"))
             .contains("\"modMenuIntegration\": false"));
+        assertTrue(ElibSettingsManager.setLanguage("fi_fi"));
+        assertEquals("fi_fi", ElibSettingsManager.languagePreference());
+        assertTrue(Files.readString(directory.resolve("elib.json")).contains("\"language\": \"fi_fi\""));
 
         assertTrue(ElibSettingsManager.resetToDefaults());
         assertTrue(ElibSettingsManager.get().showOptionsButton);
         assertTrue(ElibSettingsManager.get().modMenuIntegration);
         assertTrue(ElibSettingsManager.get().configNotifications);
+        assertEquals("auto", ElibSettingsManager.languagePreference());
     }
 }

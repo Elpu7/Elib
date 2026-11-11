@@ -81,14 +81,41 @@ public final class ElibSettingsManager {
         return save();
     }
 
+    /**
+     * Gets the shared language preference without requiring settings to be initialized.
+     * @return the saved locale code, or {@code auto} before client settings have loaded
+     */
+    public static String languagePreference() {
+        return store == null ? ElibLanguage.AUTOMATIC : get().language;
+    }
+
+    /**
+     * Saves the language shared by Elib and registered mods. Call {@link ElibLanguage#refresh()}
+     * on the client thread after a successful change.
+     *
+     * @param language a supported locale code or {@code auto}
+     * @return whether the preference was saved
+     */
+    public static boolean setLanguage(String language) {
+        String previous = get().language;
+        get().language = ElibLanguage.normalizePreference(language);
+        if (save()) {
+            return true;
+        }
+        get().language = previous;
+        return false;
+    }
+
     public static boolean resetToDefaults() {
         get().showOptionsButton = true;
         get().modMenuIntegration = true;
         get().configNotifications = true;
+        get().language = ElibLanguage.AUTOMATIC;
         return save();
     }
 
     private static void sanitize(ElibSettings settings) {
+        settings.language = ElibLanguage.normalizePreference(settings.language);
         if (!settings.showOptionsButton && !settings.modMenuIntegration) {
             settings.showOptionsButton = true;
         }
